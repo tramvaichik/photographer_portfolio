@@ -1,0 +1,282 @@
+@import './variables';
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+  background-image: $backgroundMain;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  height: 12vh;
+  background: $backgroundNav;
+}
+
+.rectangle_list {
+  list-style-type: none;
+}
+
+.rectangle_item {
+  display: inline;
+  padding: 3vw;
+}
+
+.list_home,
+.list_photo,
+.list_tattoo,
+.list_contacts {
+  color: $colorList;
+  line-height: 1.2;
+  position: relative;
+  padding: 0 14px;
+  text-transform: none;
+  font-family: $familyList;
+  font-size: 1.7em;
+
+  &:after {
+    content: "";
+    height: 100%;
+    min-width: 4px;
+    background: $backgroundLink;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .5s;
+  }
+
+  &:hover:after {
+    min-width: 100%;
+    background: $backgroundLink2;
+    opacity: .35;
+  }
+
+  &:link {
+    text-decoration: none;
+    color: $colorLink;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: $colorHover;
+    box-shadow: 2px 3px 2px #008674;
+    top: 3px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_home {
+  display: flex;
+  justify-content: center;
+  border: 3px solid #1f0808;
+  border-radius: 12px;
+  width: 80%;
+  margin: 2%;
+}
+
+.home_images {
+  display: flex;
+  justify-content: center;
+}
+
+.home_avatar {
+  width: 65vh;
+  padding: 1vw;
+}
+
+.home_desc {
+  width: 65vh;
+  display: grid;
+  justify-content: center;
+  padding: 1%;
+}
+
+.home_title,
+.photo_title,
+.contacts_title {
+  font-family: $familyList;
+  font-size: 2em;
+  text-align: center;
+  color: $colorTitle;
+}
+
+.home_text,
+.footer_text {
+  font-family: $familyText;
+  font-size: 1em;
+  font-weight: bolder;
+  text-align: center;
+  color: $colorText;
+}
+
+.home_list {
+  font-family: 'Lobster', cursive;
+  font-size: larger;
+  list-style: none;
+}
+
+.home_link {
+  color: $colorHome;
+  text-decoration: none;
+}
+
+.home_list li {
+  padding: 1%;
+
+  &:before {
+    padding-right: 8px;
+    font-weight: bold;
+    color: $colorBefore;
+    content: "\2714";
+    transition-duration: 0.3s;
+  }
+
+  &:hover:before {
+    color: $colorHover;
+    content: "\2714";
+  }
+}
+
+.section_photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_photo {
+  display: grid;
+  justify-content: center;
+}
+
+.photo_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_photo {
+  width: 25em;
+  border: 2px solid white;
+  border-radius: 12px;
+}
+
+.photo_button {
+  display: flex;
+}
+
+.photo_btn_prev,
+.photo_btn_next {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  color: $colorBtn;
+  text-shadow: 0px 2px 2px rgb(78, 0, 55);
+  font-size: 3em;
+  font-weight: bolder;
+  background: transparent;
+
+  &:hover {
+    color: rgb(100, 2, 7);
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px #d472ddbe inset;
+  }
+
+  &:active {
+    color: rgb(186, 130, 238);
+    background-color: rgb(1, 111, 155);
+    box-shadow: 2px 3px 2px #7b0086;
+    top: 3px;
+  }
+
+  &:focus {
+    border: 2px solid #ff0000;
+    border-radius: 15px;
+  }
+}
+
+.section_contacts {
+  display: grid;
+  justify-content: center;
+}
+
+.contacts__social {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.fa {
+  padding: 20px;
+  // font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa.fa-paper-plane,
+.fa.fa-vk,
+.fa.fa-instagram,
+.fa.fa-pinterest {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 3em;
+  color: #3f014e;
+  font-size: 2em;
+
+  &:hover {
+    color: rgb(100, 2, 7);
+    border-radius: 10px;
+    box-shadow: 0 0 40px 40px #d472ddbe inset;
+  }
+
+  &:active {
+    color: rgb(186, 130, 238);
+    background-color: rgb(1, 111, 155);
+    box-shadow: 2px 3px 2px #7b0086;
+    top: 3px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid;
+}
+
+.footer_section {
+  display: flex;
+}
+
+//  {
+//   font-family: Georgia, 'Times New Roman', Times, serif;
+//   font-size: 1em;
+//   text-align: center;
+//   color: #2b101f;
+// }
+
+.footer .fa.fa-paper-plan {
+  font-size: 1em;
+}

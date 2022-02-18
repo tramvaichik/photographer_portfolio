@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/2484/2484679.png" type="image/svg">
+    <title>Визитка </title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header_nav">
+            <ul class="rectangle_list">
+                <li class="rectangle_item"><a class="list_home" href="#about_me"> Обо мне </a></li>
+                <li class="rectangle_item"><a class="list_photo" href="#example_photo"> Фото-работы </a></li>
+                <!-- <li class="rectangle_item"><a class="list_tattoo" href="#tatoo"> Тату-работы </a></li> -->
+                <li class="rectangle_item"><a class="list_contacts" href="#contacts"> Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section_home" id="about_me">
+            <div class="home_images">
+                <img class="home_avatar" src="assets/images/author.jpeg" alt="author">
+            </div>
+            <div class="home_desc">
+                <h1 class="home_title"> Настя Рейтер </h1>
+                <p class="home_text">Всем привет! Я фотограф и тату-мастер Настя. Занимаюсь фотографией уже 13 лет. Живу
+                    и
+                    работаю в Санкт-Петербурге. Направление разное: </p>
+                <ul class="home_list">
+                    <li class="item"> <a class="home_link" href="https://vk.com/albums-6048848">Свадебная
+                            съёмка</a> </li>
+                    <li class="item"> <a class="home_link"
+                            href="https://www.pinterest.ru/reiterphoto/family-%D0%BB%D1%8E%D0%B1%D0%BE%D0%B2%D1%8C%D1%81%D0%B5%D0%BC%D1%8C%D1%8F-%D0%B4%D0%B5%D1%82%D0%B8/">Семейная
+                            съёмка</a> </li>
+                    <li class="item"> <a class="home_link"
+                            href="https://www.pinterest.ru/reiterphoto/vegan-food-porn/">Фуд-съёмка
+                            (веган)</a> </li>
+                    <li class="item"> <a class="home_link" href="https://www.instagram.com/p/COzxq0wLgGs/">Подводная
+                            съёмка</a>
+                    </li>
+                    <li class="item"> <a class="home_link"
+                            href="https://www.pinterest.ru/reiterphoto/content/">Контент-съёмка</a>
+                    </li>
+                </ul>
+                <!-- 
+                <p class="home_text">Так же 4 года я делаю этичные татуировки. Домашняя студия этичной татуировки (все
+                    краски и
+                    расходные материалы
+                    не содержат
+                    компонентов животного происхождения и
+                    не тестируются на животных).
+                    Забьём, поддержим беседу, напоим чаем и всё это по гуманному прайсу.
+                </p> -->
+            </div>
+        </section>
+        <section class="section_photo" id="example_photo">
+            <h2 class="photo_title"> Мои фото-работы </h2>
+            <div class="photo_block">
+                <div class="photo_img">
+                    <img src="./assets/images/content/blue_dress.jpeg" alt="photo" class="img_photo" id="photo">
+                </div>
+                <div class="photo_button">
+                    <button class="photo_btn_prev" onclick="photoImgPrev()" id="btnPrev">&lsaquo;</button>
+                    <button class="photo_btn_next" onclick="photoImgNext()" id="btnNext">&rsaquo;</button>
+                </div>
+            </div>
+        </section>
+        <section class="section_contacts" id="contacts">
+            <div class="contacts_title">
+                <h1>Со мной можно связаться в соцсетях и месенджерах: </h1>
+            </div>
+            <div class="contacts__social">
+                <div class="social_telegram">
+                    <a href="@ReiterA"><i class="fa fa-paper-plane fa-2x"></i></a>
+                </div>
+                <div class="social_vk">
+                    <a href="https://vk.com/reiterphoto"><i class="fa fa-vk fa-2x"></i></a>
+                </div>
+                <div class="social_instagram">
+                    <a href="https://www.instagram.com/kevaart/"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+                <div class="social_pinterest">
+                    <a href="https://www.pinterest.ru/reiterphoto/_saved/"><i class="fa fa-pinterest fa-2x"></i></a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_section">
+            <div class="footer_telegram">
+                <a href="#" target="_blank"><i class="fa fa-paper-plane fa-1x"></i></a>
+            </div>
+            <div class="footer_instagram">
+                <a href="#" target="_blank"><i class="fa fa-instagram fa-1x"></i></a>
+            </div>
+            <div class="footer_text">
+                <p class="footer_txt"> &copy; Дина Гуринова </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

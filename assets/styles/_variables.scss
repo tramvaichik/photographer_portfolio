@@ -1,0 +1,27 @@
+@import 'https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&display=swap';
+
+//background
+$backgroundMain: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+url(/assets/images/back.jpeg);
+$backgroundNav: rgba(207, 237, 241, 0.473);
+$backgroundLink: #42034b;
+$backgroundLink2:#9fedf3;
+
+//color
+$colorList:rgb(18, 1, 78);
+$colorLink:rgb(171, 209, 240);
+$colorHover:rgb(0, 22, 95);
+$colorTitle: rgb(6, 6, 100);
+$colorText:rgb(43, 16, 31);
+$colorHome:rgb(63, 1, 78);
+$colorBefore:rgb(53, 4, 7);
+$colorHover:rgb(183, 0, 255);
+$colorBtn: rgb(163, 7, 155);
+
+//text
+$familyList:'Lobster',
+cursive;
+$familyText:Georgia,
+'Times New Roman',
+Times,
+serif;

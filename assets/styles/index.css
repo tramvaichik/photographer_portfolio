@@ -1,0 +1,283 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&display=swap';
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(/assets/images/back.jpeg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  height: 12vh;
+  background: rgba(207, 237, 241, 0.473);
+}
+
+.rectangle_list {
+  list-style-type: none;
+}
+
+.rectangle_item {
+  display: inline;
+  padding: 3vw;
+}
+
+.list_home,
+.list_photo,
+.list_tattoo,
+.list_contacts {
+  color: #12014e;
+  line-height: 1.2;
+  position: relative;
+  padding: 0 14px;
+  text-transform: none;
+  font-family: "Lobster", cursive;
+  font-size: 1.7em;
+}
+.list_home:after,
+.list_photo:after,
+.list_tattoo:after,
+.list_contacts:after {
+  content: "";
+  height: 100%;
+  min-width: 4px;
+  background: #42034b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+.list_home:hover:after,
+.list_photo:hover:after,
+.list_tattoo:hover:after,
+.list_contacts:hover:after {
+  min-width: 100%;
+  background: #9fedf3;
+  opacity: 0.35;
+}
+.list_home:link,
+.list_photo:link,
+.list_tattoo:link,
+.list_contacts:link {
+  text-decoration: none;
+  color: #abd1f0;
+}
+.list_home:hover,
+.list_photo:hover,
+.list_tattoo:hover,
+.list_contacts:hover {
+  text-decoration: underline;
+  color: #b700ff;
+  box-shadow: 2px 3px 2px #008674;
+  top: 3px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_home {
+  display: flex;
+  justify-content: center;
+  border: 3px solid #1f0808;
+  border-radius: 12px;
+  width: 80%;
+  margin: 2%;
+}
+
+.home_images {
+  display: flex;
+  justify-content: center;
+}
+
+.home_avatar {
+  width: 65vh;
+  padding: 1vw;
+}
+
+.home_desc {
+  width: 65vh;
+  display: grid;
+  justify-content: center;
+  padding: 1%;
+}
+
+.home_title,
+.photo_title,
+.contacts_title {
+  font-family: "Lobster", cursive;
+  font-size: 2em;
+  text-align: center;
+  color: #060664;
+}
+
+.home_text,
+.footer_text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  font-weight: bolder;
+  text-align: center;
+  color: #2b101f;
+}
+
+.home_list {
+  font-family: "Lobster", cursive;
+  font-size: larger;
+  list-style: none;
+}
+
+.home_link {
+  color: #3f014e;
+  text-decoration: none;
+}
+
+.home_list li {
+  padding: 1%;
+}
+.home_list li:before {
+  padding-right: 8px;
+  font-weight: bold;
+  color: #350407;
+  content: "✔";
+  transition-duration: 0.3s;
+}
+.home_list li:hover:before {
+  color: #b700ff;
+  content: "✔";
+}
+
+.section_photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_photo {
+  display: grid;
+  justify-content: center;
+}
+
+.photo_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_photo {
+  width: 25em;
+  border: 2px solid white;
+  border-radius: 12px;
+}
+
+.photo_button {
+  display: flex;
+}
+
+.photo_btn_prev,
+.photo_btn_next {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  color: #a3079b;
+  text-shadow: 0px 2px 2px #4e0037;
+  font-size: 3em;
+  font-weight: bolder;
+  background: transparent;
+}
+.photo_btn_prev:hover,
+.photo_btn_next:hover {
+  color: #640207;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #d472ddbe inset;
+}
+.photo_btn_prev:active,
+.photo_btn_next:active {
+  color: #ba82ee;
+  background-color: #016f9b;
+  box-shadow: 2px 3px 2px #7b0086;
+  top: 3px;
+}
+.photo_btn_prev:focus,
+.photo_btn_next:focus {
+  border: 2px solid #ff0000;
+  border-radius: 15px;
+}
+
+.section_contacts {
+  display: grid;
+  justify-content: center;
+}
+
+.contacts__social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa {
+  padding: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa.fa-paper-plane,
+.fa.fa-vk,
+.fa.fa-instagram,
+.fa.fa-pinterest {
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 3em;
+  color: #3f014e;
+  font-size: 2em;
+}
+.fa.fa-paper-plane:hover,
+.fa.fa-vk:hover,
+.fa.fa-instagram:hover,
+.fa.fa-pinterest:hover {
+  color: #640207;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #d472ddbe inset;
+}
+.fa.fa-paper-plane:active,
+.fa.fa-vk:active,
+.fa.fa-instagram:active,
+.fa.fa-pinterest:active {
+  color: #ba82ee;
+  background-color: #016f9b;
+  box-shadow: 2px 3px 2px #7b0086;
+  top: 3px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid;
+}
+
+.footer_section {
+  display: flex;
+}
+
+.footer .fa.fa-paper-plan {
+  font-size: 1em;
+}/*# sourceMappingURL=index.css.map */
